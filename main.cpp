@@ -15,17 +15,17 @@ int main() {
     setlocale(LC_ALL, "RUSSIAN");
     AccountInfo accInfo;
     
-    std::cout << "Ââåäèòå íîìåð ñ÷¸òà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‡Ñ‘Ñ‚Ð°: ";
     std::cin >> accInfo.accountNumb;
-    std::cout << "Ââåäèòå èìÿ âëàäåëüöà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð°: ";
     std::cin >> accInfo.name;
-    std::cout << "Ââåäèòå áàëàíñ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð±Ð°Ð»Ð°Ð½Ñ: ";
     std::cin >> accInfo.balance;
-    std::cout << "Ââåäèòå íîâûé áàëàíñ: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ: ";
     int newBalance{ 0 };
     std::cin >> newBalance;
     setNewBalance(accInfo, newBalance);
-    std::cout << "Âàø ñ÷¸ò: " << accInfo.name << ", "
+    std::cout << "Ð’Ð°Ñˆ ÑÑ‡Ñ‘Ñ‚: " << accInfo.name << ", "
         << accInfo.accountNumb << ", "
         << accInfo.balance << "\n";
 }
