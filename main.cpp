@@ -22,7 +22,7 @@ int main() {
     std::cout << "Введите баланс: ";
     std::cin >> accInfo.balance;
     std::cout << "Введите новый баланс: ";
-    int newBalance{ 0 };
+    float newBalance{ 0 };
     std::cin >> newBalance;
     setNewBalance(accInfo, newBalance);
     std::cout << "Ваш счёт: " << accInfo.name << ", "
